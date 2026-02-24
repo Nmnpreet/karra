@@ -1,0 +1,4 @@
+LoadText = document.querySelector('.loading-text')
+bg = document.querySelector('.bg')
+
+loadtext.innerText

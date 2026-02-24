@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+.loading text {
+    font-size: 50px;
+}
+
+
+.bg{
+    width: 100vw;
+    width: 100vh;
+    background image: url('mountains.avif');
+}

@@ -24,8 +24,11 @@ body{
 .bg{
     width: 100vw;
     width: 100vh;
-    background image: url('mountains.avif');
+    background image: url('../images/mountains.avif');
     position: absolute;
     background-repeat: no-repeats;
-    
+    backgorund-size: cover;
+    z-index: -1
+
 }
+.loading

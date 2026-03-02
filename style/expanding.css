@@ -26,6 +26,7 @@
     flex: 0.5;
     margin: 10px;
     position: relative;
+    transition: flex 1s ease-in;
 
 
  }
@@ -37,6 +38,7 @@ left: 20px;
 margin: 0px;
 font-size: 24px;
 opacity: 0;
+transition: opacity 1s ease-in;
 }
 .panel.active{
    flex: 10;

@@ -1,10 +1,14 @@
 body{
-    height width babkgroun:
-
+    height: 50;
+    width: 50;
+    background: red;
 
 }
 
 
 .box
-height width
-naclgotun blue
+{
+    height: 20;
+    width: 30;
+
+}

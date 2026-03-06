@@ -7,7 +7,7 @@ panels[i].addEventListener('click',function ()  {
 panels[i].classList.add('active');
 });
 }
-function removeActiveAllPanels()
+function removeActiveFromAllPanels()
 {
     for (let i = 0; i < panels.length; i = i + 1)
     {

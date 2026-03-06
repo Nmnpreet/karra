@@ -1,15 +1,15 @@
 panels= document.querySelectorAll('.panel')
-for (i = 0; i < 5; i = i +1)
+for (i = 0; i < panels; i = i +1)
 {
 
-panels[i].addEventListener('click',() => {
+panels[i].addEventListener('click',function ()  {
     removeActiveFromAllPanels()
 panels[i].classList.add('active')
 })
 }
-Function removeActiveAllPanels()
+function removeActiveAllPanels()
 {
-    for (let i = 0; i < 5; i = 1 + 1)
+    for (let i = 0; i < panels.length; i = i + 1)
     {
         panel[i].classList.remove('active')
     }

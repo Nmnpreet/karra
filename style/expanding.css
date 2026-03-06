@@ -16,14 +16,14 @@
 
  }
  .panel{
-    background-size = cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no repeat;
     height: 80vh;
     border-radius: 50px;
     color: white;
     cursor: pointer;
-    flex: 0.5;
+    flex: 1;
     margin: 10px;
     position: relative;
     transition: flex 1s ease-in;
@@ -37,11 +37,12 @@ bottom: 20px;
 left: 20px;
 margin: 0px;
 font-size: 24px;
-opacity: 0;
+opacity: 0;ds
 transition: opacity 1s ease-in;
-}.
+}
 .panel.active{
    flex: 10;
+   opacity: 1;
 }
 
 .panel.active h3{

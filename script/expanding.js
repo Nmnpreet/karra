@@ -1,5 +1,5 @@
 const panels = document.querySelectorAll('.panel');
-for (let i = 0; i < panels.length i = i + 1)
+for (let i = 0; i < panels.length; i = i + 1)
 {
 
 panels[i].addEventListener('click', function ()  {

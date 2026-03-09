@@ -5,17 +5,17 @@ hoverBox = document.querySelector('.hover')
 dblclickBox = document.querySelector('.dblclick')
 
 
-colors = ['blue, green, purple red']
+colors = ['blue, green, purple, red']
 index = 0
 
 clickBox.addEventListener('click', () => {
 
-  clickBox.style.background = "index = index + 1"
+  clickBox.style.background('colors'); index = index + 1
 
 })
+
 x = 0
 y = 0
-
 document.addEventListener('keydown' , (event) => {
 if (event.key == 'ArrowRight') (x = x + 10)
   if (event.key == 'ArrowLeft') (x = x - 10)

@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.title{
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 body{
     display: flex;

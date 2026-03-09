@@ -17,3 +17,20 @@
 
  }
 
+.panel.active{
+    flex: 10;
+}
+
+.panel {
+     background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+    height: 40vh;
+    border-radius: 80px;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+    bottom: 10px;
+}

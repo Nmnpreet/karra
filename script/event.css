@@ -45,19 +45,21 @@ body{
     bottom: 50px;
     right: 50px;
 }
-.spin{
-    animation: spin 1s linear infinite;
+.spin {
     position: absolute;
-    top left: 100px;
-    top right: 150px;
-
+    top: 100px;
+    left: 150px;
 }
-@keyframes spin
-{
-    from{
-        transform: rotate (0deg);
+
+.spinning {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(360deg);
     }
 }

@@ -3,36 +3,26 @@
 
 }
  body{
+    text-align: center;
     height: 50vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
+    color: white;
+    background-color: navy;
 
 }
-.container
- {
-    display: flex;
-    width: 50vw;
 
- }
 
-.panel.active{
-    flex: 10;
-}
-
-.panel {
-     background-size: cover;
+/* fontawesom.com */
+.panel{
+    background-size: cover;
     background-position: center;
    background-repeat: no-repeat;
-    height: 40vh;
-    border-radius: 80px;
+    height: 80vh;
+    border-radius: 50px;
     color: white;
     cursor: pointer;
     flex: 1;
-    margin: 5px;
+    margin: 10px;
     position: relative;
-    bottom: 10px;
-}
-
-/* fontawesom.com */
+ }

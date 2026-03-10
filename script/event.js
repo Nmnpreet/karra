@@ -18,7 +18,14 @@ clickBox.addEventListener('click', () => {
   }
   clickBox.style.color = 'white'
 })
+spinBox.addEventListener('mouseenter', () => {
+  spinBox.classList.add('spinning')
+})
 
+// Stop spinning when clicked
+spinBox.addEventListener('mouseleave', () => {
+  spinBox.classList.remove('spinning')
+})
 x = 0
 y = 0
 document.addEventListener('keydown', (event) => {
@@ -47,3 +54,15 @@ hoverBox.addEventListener('mouseenter', () =>
 
   })
 
+dblclickBox.addEventListener('mouseenter', () =>
+{
+  dblclickBox.style.height = "20px"
+   dblclickBox.style.width = "50px"
+
+})
+ dblclickBox.addEventListener('mouseleave', () =>
+  {
+       dblclickBox.style.height = "200px"
+       dblclickBox.style.width = "250px"
+
+  })

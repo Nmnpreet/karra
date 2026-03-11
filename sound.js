@@ -2,8 +2,8 @@
 buttons = document.querySelector('.buttons')
 
 btn = document.createElement('.button')
-btn.innertext = "Click Me"
-btn.classlist.add
+btn.innerText = "Click Me"
+btn.classlist.add(.'btn')
 buttons.appendChild(btn)
 
 

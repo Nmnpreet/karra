@@ -14,5 +14,8 @@ body{
 .btn
 {
     background: rebeccapurple;
+    color: white;
+    margin: 1rem;
     
+/* 1rem: unit of measurement: */
 }

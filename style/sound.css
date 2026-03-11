@@ -10,7 +10,7 @@
 body{
     font-family: "Sekuya", system-ui;
     background: rgb(33, 44, 89)
-    height: 200vh;
+     height: 200vh;
     display: flex;
     align-items: center;
     justify-content: center;

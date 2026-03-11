@@ -3,9 +3,9 @@ buttons = document.querySelector('.buttons')
 applause = document.querySelector('.applause')
 boo = document.querySelector('.boo')
 
-btn = document.createElement('.button')
+btn = document.createElement('button')
 btn.innerText = "applause"
-btn.classlist.add('.btn')
+btn.classlist.add('btn')
 
 btn.addEventListener('click', () =>{
 applause.play()

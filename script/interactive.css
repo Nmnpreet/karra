@@ -4,7 +4,7 @@
 }
  body{
     text-align: center;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     margin: 0;
     color: white;
@@ -18,7 +18,7 @@
     background-size: cover;
     background-position: center;
    background-repeat: no-repeat;
-    height: 80vh;
+    height: 55vh;
     border-radius: 50px;
     color: white;
     cursor: pointer;

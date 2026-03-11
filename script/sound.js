@@ -7,9 +7,9 @@ btn = document.createElement('.button')
 btn.innerText = "applause"
 btn.classlist.add('.btn')
 
-btn.addEventListener('click', () =>){
+btn.addEventListener('click', () =>{
 applause.play()
-}
+})
 buttons.appendChild(btn)
 
 
@@ -19,11 +19,11 @@ applause = document.querySelector('.applause')
 
 btn = document.createElement('.button')
 btn.innerText = "applause"
-btn.classlist.add(.'btn')
+btn.classlist.add('.btn')
 
-btn.addEventListener('click', () =>){
+btn.addEventListener('click', () =>{
 applause.play()
-}
+})
 buttons.appendChild(btn)
 
 

@@ -5,7 +5,7 @@ boo = document.querySelector('.boo')
 
 btn = document.createElement('.button')
 btn.innerText = "applause"
-btn.classlist.add(.'btn')
+btn.classlist.add('.btn')
 
 btn.addEventListener('click', () =>){
 applause.play()

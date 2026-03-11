@@ -4,6 +4,7 @@
 }
 
 body{
+    background: rgb(33, 44, 89)
     height: 200vh;
     display: flex;
     align-items: center;
@@ -24,5 +25,5 @@ body{
 }
 .btn:hover{
     opacity: 0.9;
-    
+
 }

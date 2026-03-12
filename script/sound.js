@@ -1,15 +1,15 @@
-
 buttons = document.querySelector('.buttons')
-applause = document.querySelector('.applause')
-boo = document.querySelector('.boo')
+sounds = ['applause','boo','gasp','tada','victory','wrong']
 
-btn = document.createElement('button')
-btn.innerText = "applause"
-btn.classList.add('btn')
+for (let i = 0; i < 6; i = i + 1){
+    btn = document.createElement('button')
+    btn.innerText = sounds[i]
+    btn.classList.add('btn')
+    btn.addEventListener('click',() => {
 
-btn.addEventListener('click', () =>{
-applause.play()
-})
+        document.querySelector(`.${sounnds[i]}`).play()
+
+    })
+
 buttons.appendChild(btn)
-
-
+}

@@ -1,0 +1,18 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #333333;
+    color: #222222;
+    margin: 0;
+}
+.container
+{
+    background: #fafafa
+    width: 100vh;
+    min-height: 100vh;
+    padding: 50px;
+}

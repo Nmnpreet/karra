@@ -1,34 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Sekuya&display=swap" )
-
-
-
-*
-{
+@import url("https://fonts.googleapis.com/css2?family=Sekuya&display=swap") * {
     box-sizing: border box;
 }
 
-body{
+body {
     font-family: "Sekuya", system-ui;
-    background: rgb(33, 44, 89)
-     height: 200vh;
+
     display: flex;
+    height: 200vh;
     align-items: center;
     justify-content: center;
     margin: 0;
+    background: #5a5b8c;
+    overflow-y: hidden;
 }
 
-.btn
-{
-    background: rebeccapurple;
+.btn {
+    background: #343682;
     color: white;
     margin: 1rem;
     padding: 1.5rem 3rem;
-    font-size: 1.2rem;
-    cursor:pointer;
-    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
 
 }
-.btn:hover{
+
+.btn:hover {
     opacity: 0.9;
 
 }

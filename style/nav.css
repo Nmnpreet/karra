@@ -25,7 +25,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #111;  
+    background-color: rgb(30, 35, 74);
     z-index: 1000;
         transition: all 1s ease-in-out;
 }
@@ -56,7 +56,7 @@ body {
 
 .nav a
 {
-    color: rgb(255,255,255)
+    color: white;            /* white text */
     text-decoration: none;
     padding: 7px 15px;
 
@@ -70,24 +70,19 @@ body {
 
 }
 
-.nav a:hover
-{
+
+.nav a:hover{
+    color: #c0392b;
     font-weight: bold;
-    color: #c0392b;
-
 }
-/* .nav a.current{
-font-weight: bold;
-    color: #c0392b;
-} */
 
-.hero{
+ .hero{
     background-image: url('../images/jellyfish.avif');
     height: 100vh;
     background-repeat: no-repeat;
     background-position: bottom center;
     color: white;
-    display: flex:
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -95,12 +90,8 @@ font-weight: bold;
     margin-bottom: 20px;
     z-index: -2;
 
-
-
-
-
-
 }
+
 .hero::before{
     content: '';
     position: absolute;

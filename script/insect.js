@@ -45,11 +45,15 @@ choose_insect_btns.forEach(btn => {
 //     setTimeout(createInsect, 1000)
 // }
 
-// function createInsect() {
-//     console.log("hello")
-//     const insect = document.createElement('div')
-//     insect.classList.add('insect')
-//     {x,y} = getRandomLocation()
+function createInsect() {
+
+    const insect = document.createElement('div')
+    insect.classList.add('insect')
+    const { x ,y } = getRandomLocation()
+    insect.style.top = `${y}px`
+    insect.style.left = `${x}px`
+    insect.innerHTML = `<img src="roach.png" alt="roach">`
+}
 //     insect.style.top = `${y}px`
 //     insect.style.left = `${y}px`
 
@@ -57,12 +61,12 @@ choose_insect_btns.forEach(btn => {
 //     document.body.appendChild(insect)
 // }
 
-// function getRandomLocation()
-// {
-//     width = window.insectwidth
-//     height= window.innerheight
-//     x = Math.random()*(width-200)+100
-//     y = Math.random()*(height-200)+100
-//     return {x,y}
+function getRandomLocation()
+{
+    const width = window.innertWidth
+    const height= window.innerHeight
+    const x = Math.random() * (width-200)+100
+    const y = Math.random() * (height-200)+100
+    return {x,y}
 
-// }
+}

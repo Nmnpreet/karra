@@ -48,19 +48,6 @@ setInterval(increaseTime, 1000)
     seconds++
  }
 
-// for (let i = 0; i < choose_insect_btns.length; i++) {
-//     choose_insect_btns[i].addEventListener('click', () => {
-//         screens[1].classList.add('up')
-
-//         const img = choose_insect_btns[i].querySelector('img')
-//         const src = img.getAttribute('src')
-//         const alt = img.getAttribute('alt')
-
-//         startGame()
-//         createInsect()
-//     })
-// }
-
 
 
 function createInsect() {

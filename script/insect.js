@@ -14,6 +14,15 @@ start_btn.addEventListener('click', () => {
     screens[0].classList.add('up')
 })
 
+choose_insect_btns.forEach(btn => {
+    btn.addEventListener('click',() => {
+        const img = btn.querySelector('img')
+        const alt = img.getAttribute('alt')
+        const src = img.getAttribute('src')
+
+    })
+})
+
 // for (let i = 0; i < choose_insect_btns.length; i++) {
 //     choose_insect_btns[i].addEventListener('click', () => {
 //         screens[1].classList.add('up')

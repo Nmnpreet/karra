@@ -27,7 +27,6 @@ body {
     margin-top: -100vh;
 }
 
-/* ✅ FIXED: was .insect.list (wrong) */
 .insect-list {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +48,6 @@ body {
     width: 150px;
 }
 
-/* ❌ had extra "l" at end */
 .choose-insect-btn:hover {
     background-color: white;
     color: rgb(201, 48, 48);
@@ -66,12 +64,10 @@ body {
     object-fit: contain;
 }
 
-/* ❌ typo: .game.conatiner */
 .game-container {
     position: relative;
 }
 
-/* ❌ typo: abosolute */
 .time {
     position: absolute;
     top: 20px;

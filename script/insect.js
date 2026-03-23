@@ -28,6 +28,26 @@ choose_insect_btns.forEach(btn => {
     })
 })
 
+function startGame() {
+
+setInterval(increaseTime, 1000)
+ }
+
+ function increaseTime(){
+    let m = Math.floor(seconds / 60)
+    let s = seconds % 60
+    if (m < 10)
+    {
+        m = `0${m}`
+    }
+    if (s < 10)
+    {
+        s = `0${s}`
+    }
+    timeEl.innerHTML = `Time:${m}:${s}`
+    seconds++
+ }
+
 // for (let i = 0; i < choose_insect_btns.length; i++) {
 //     choose_insect_btns[i].addEventListener('click', () => {
 //         screens[1].classList.add('up')
@@ -41,9 +61,7 @@ choose_insect_btns.forEach(btn => {
 //     })
 // }
 
-// function startGame() {
-//     setTimeout(createInsect, 1000)
-// }
+
 
 function createInsect() {
 
@@ -53,17 +71,41 @@ function createInsect() {
     insect.style.top = `${y}px`
     insect.style.left = `${x}px`
     insect.innerHTML = `<img src="selected_insect.src" alt="${selected_insect.alt}" style = "transform: rotate(${Math.random() * 360}deg" />`
-   game_container.appendChild(insect)
-    insect
+    insect.addEventListener('click',catchInsect)
+       game_container.appendChild(insect)
+
 
 }
 
-//     insect.style.top = `${y}px`
-//     insect.style.left = `${y}px`
+function catchInsect()
+{
+    increaseScore()
+    this.classList.add('caught')
+    setTimeout(() => this.remove(), 2000)
+    addInsect()
+}
+function addInsects()
+{
+    setTimeout(createInsect, 1000)
+    setTimeout(createInsect, 1500)
 
-//     insect.innerHTML = `<img src="roach.png" alt="roach">` // FIX: syntax
-//     game_container.appendChild(insect)
-// }
+
+}
+
+
+function increaseScore()
+{
+    score++
+    if (score > 19)
+    {
+        message.classList.add('visible')
+    }
+    scoreEl.innerHTML = `Score: ${score}`
+}
+
+
+
+
 
 function getRandomLocation()
 {

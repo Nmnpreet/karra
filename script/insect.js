@@ -52,13 +52,16 @@ function createInsect() {
     const { x ,y } = getRandomLocation()
     insect.style.top = `${y}px`
     insect.style.left = `${x}px`
-    insect.innerHTML = `<img src="roach.png" alt="roach">`
+    insect.innerHTML = `<img src="selected_insect.src" alt="selected_insect.alt" style = "transform: rotate(${Math.random() * 360}deg" />`
+   game_container.appendChild(insect)
+
 }
+
 //     insect.style.top = `${y}px`
 //     insect.style.left = `${y}px`
 
 //     insect.innerHTML = `<img src="roach.png" alt="roach">` // FIX: syntax
-//     document.body.appendChild(insect)
+//     game_container.appendChild(insect)
 // }
 
 function getRandomLocation()

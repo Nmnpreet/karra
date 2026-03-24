@@ -32,7 +32,7 @@ function startGame() {
     setInterval(increaseTime, 1000)
 }
 
-function increaseTime() {
+function increaseTime() {n
     let m = Math.floor(seconds / 60)
     let s = seconds % 60
 

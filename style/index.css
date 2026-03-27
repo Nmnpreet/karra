@@ -1,0 +1,39 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cedarville+Cursive&family=Outfit:wght@100..900&family=Sekuya&display=swap'); */
+* {
+
+
+    box-sizing: border-box;
+
+}
+body {
+  background: navy;
+     color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.page {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10;
+}
+
+.image{
+    background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+    height: 10vh;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+    margin: 10px;
+    position: relative;
+
+ }

@@ -9,17 +9,11 @@ const message = document.getElementById('message')
 let seconds = 0
 let score = 0
 let selected_insect = {}
-let timer = null
 
-// 🎵 Sound effects
-const catchSound = new Audio("https://www.soundjay.com/buttons/sounds/button-16.mp3")
-
-// ▶️ Start screen
 start_btn.addEventListener('click', () => {
     screens[0].classList.add('up')
 })
 
-// 🐞 Choose insect
 choose_insect_btns.forEach(btn => {
     btn.addEventListener('click', () => {
         const img = btn.querySelector('img')
@@ -29,37 +23,26 @@ choose_insect_btns.forEach(btn => {
         screens[1].classList.add('up')
         selected_insect = { src, alt }
 
-        startGame()
         setTimeout(createInsect, 1000)
+        startGame()
     })
 })
 
-// ⏱️ Start game (fixed timer)
 function startGame() {
-    if (!timer) {
-        timer = setInterval(increaseTime, 1000)
-    }
+    setInterval(increaseTime, 1000)
 }
 
-// ⏱️ Timer (FIXED BUG HERE)
 function increaseTime() {
-    seconds++
-
     let m = Math.floor(seconds / 60)
     let s = seconds % 60
 
-    m = m < 10 ? `0${m}` : m
-    s = s < 10 ? `0${s}` : s
+    if (m < 10) m = `0${m}`
+    if (s < 10) s = `0${s}`
 
     timeEl.innerHTML = `Time: ${m}:${s}`
-
-    // 🔥 Difficulty increases over time
-    if (seconds % 5 === 0) {
-        createInsect()
-    }
+    seconds++
 }
 
-// 🐜 Create insect
 function createInsect() {
     const insect = document.createElement('div')
     insect.classList.add('insect')
@@ -80,16 +63,10 @@ function createInsect() {
 function catchInsect() {
     increaseScore()
     this.classList.add('caught')
-
-    catchSound.currentTime = 0
-    catchSound.play()
-
     setTimeout(() => this.remove(), 2000)
-
     addInsects()
 }
 
-// ➕ Add more insects (faster over time)
 function addInsects() {
     setTimeout(createInsect, 1000)
     setTimeout(createInsect, 1500)
@@ -97,11 +74,9 @@ function addInsects() {
 
 function increaseScore() {
     score++
-
     if (score > 19) {
         message.classList.add('visible')
     }
-
     scoreEl.innerHTML = `Score: ${score}`
 }
 

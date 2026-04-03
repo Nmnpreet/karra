@@ -9,23 +9,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;       /* center horizontally */
+  align-items: center;       
   text-align: center;
 }
 
-/* Title */
 .title {
   font-size: 50px;
   margin-bottom: 10px;
 }
 
-/* Subtitle */
 .subtitle {
   font-size: 20px;
   margin-bottom: 30px;
 }
 
-/* Links */
 a {
   display: block;
   margin: 8px 0;

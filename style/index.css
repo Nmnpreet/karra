@@ -8,7 +8,7 @@ body {
  font-family: "Playfair Display", serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;   
+  justify-content: center;
   align-items: center;       /* center horizontally */
   text-align: center;
 }
@@ -36,4 +36,21 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+.button {
+  display: block;
+  width: 220px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #2C5D63;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1E4044;
+  transform: scale(1.05);
 }

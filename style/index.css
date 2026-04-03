@@ -1,39 +1,39 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cedarville+Cursive&family=Outfit:wght@100..900&family=Sekuya&display=swap'); */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
-    box-sizing: border-box;
-
-}
 body {
-  background: navy;
-     color: #ffffff;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
+  margin: 0;
+  height: 100vh;
+  background-color: #0B2E33;
+  color: white;
+ font-family: "Playfair Display", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       /* center horizontally */
+  text-align: center;
 }
 
-.page {
-
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10;
+/* Title */
+.title {
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
-.image{
-    background-size: cover;
-    background-position: center;
-   background-repeat: no-repeat;
-    height: 10vh;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    flex: 1;
-    margin: 10px;
-    position: relative;
+/* Subtitle */
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
 
- }
+/* Links */
+a {
+  display: block;
+  margin: 8px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline;
+}

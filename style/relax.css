@@ -63,5 +63,18 @@ body{
     width: 20px;
     display: block;
     x-index: 100;
-    
+
+}
+.pointer-container
+{
+
+}
+
+@keyframe rotate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }

@@ -21,4 +21,6 @@ body{
     height: 300px;
     width: 300px;
     position: relative;
+    transform: scale(1);
+    
 }

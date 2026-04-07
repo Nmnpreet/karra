@@ -55,3 +55,13 @@ body{
     left: -10px;
 
 }
+
+.pointer {
+    background: #ffffff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+    x-index: 100;
+    
+}

@@ -5,6 +5,7 @@ totaltime = 7500
 breatheTime = (totalTime / 5 )* 2
 
 
+
 breatheAnimation()
 setInterval(breatheAnimaton,7500)
 
@@ -14,12 +15,12 @@ function breathAnimation()
     container.classList.remove('grow')
     container.classList.add('grow')
     setTimeout(()=>{
-        text.innerHTML =  'hold'
+        text.innerTextL =  'hold'
 
 
     },3000)
     setTimeout( () => {
-        text.innerHTML = 'Breathe Out!'
+        text.innerText = 'Breathe Out!'
         conatiner.clasList.remove('grow')
         container.classList.add('shrink')
     },4500)

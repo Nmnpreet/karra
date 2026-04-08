@@ -78,7 +78,7 @@ transform-origin: bottom center;
 
 }
 
-@keyframe rotate{
+@keyframes rotate{
     from{
         transform: rotate(0deg);
     }

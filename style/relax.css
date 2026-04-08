@@ -26,13 +26,13 @@ body{
 }
 .circle
 {
-    background: #010f1c;
+    background-color: #010f1c;
     height: 100%;
     width: 100%;
     border-radius: 50%;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: -1;
 
 }
@@ -51,8 +51,8 @@ body{
     z-index: -2;
     border-radius: 50%;
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: -10;
+    left:  -10;
 
 }
 

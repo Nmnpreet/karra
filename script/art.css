@@ -11,12 +11,6 @@ body{
 }
 .triangle
 {
-background-color: red;
-width: 40vw;
-height: 20vh;
-bottom: 50;
-display: flex;
-align-items: center;
-border-radius: 10px;
+
 }
 

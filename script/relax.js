@@ -1,5 +1,12 @@
 const conatiner = document.getElementById('container')
 const text = document.getElementById('text')
+
+totaltime = 7500
+breathe
+
+breatheAnimation()
+setInterval(breatheAnimaton,7500)
+
 function breathAnimation()
 {
     text.innerHTML = 'Breathe In'

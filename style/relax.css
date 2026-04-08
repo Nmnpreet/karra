@@ -99,6 +99,20 @@ transform-origin: bottom center;
 
     }
     to {
-        tramsfrom: scale (1.2);
+        transform: scale (1.2);
+    }
+}
+.container.shrink
+{
+    animation: shrink 3s linear forward;
+}
+@keyframes shrink
+{
+    from {
+        transform: scale(1.2);
+
+    }
+    to{
+        transform: scale(1.2);
     }
 }

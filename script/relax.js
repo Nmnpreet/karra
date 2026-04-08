@@ -13,13 +13,15 @@ function breatheAnimation()
     container.classList.remove('shrink')
     container.classList.add('grow')
 
+    // setTimeout( () => {
+    //     text.innerText= 'hold'
+
+
+    // },3000)
+
     setTimeout( () => {
-        text.innerText= 'hold'
+                text.innerText= 'hold'
 
-
-    },3000)
-
-    setTimeout( () => {
         text.innerText = 'Breathe Out!'
         conatiner.clasList.remove('grow')
         container.classList.add('shrink')

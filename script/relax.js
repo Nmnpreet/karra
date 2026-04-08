@@ -5,9 +5,9 @@ const text = document.getElementById('text')
 // breatheTime = (totalTime / 5 )* 2
 // HoldTime = totalTime / 5
 
-setInterval(breatheAnimaton, 7500)
+setInterval(breatheAnimation, 7500)
 
-function breathAnimation()
+function breatheAnimation()
 {
     text.innerText = 'Breathe In'
     container.classList.remove('shrink')

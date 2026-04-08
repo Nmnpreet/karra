@@ -2,7 +2,8 @@ const conatiner = document.getElementById('container')
 const text = document.getElementById('text')
 
 totaltime = 7500
-breathe
+breatheTime = (totalTime / 5 )* 2
+
 
 breatheAnimation()
 setInterval(breatheAnimaton,7500)

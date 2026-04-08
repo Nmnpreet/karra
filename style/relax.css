@@ -87,8 +87,8 @@ transform-origin: bottom center;
 }
 .container.grow
 {
-    background: red;
-    animation: grow 3s linear forward;
+
+    animation: grow 3s linear forwards;
 }
 
 @keyframes grow
@@ -105,7 +105,7 @@ transform-origin: bottom center;
 
 .container.shrink
 {
-    animation: shrink 3s linear forward;
+    animation: shrink 3s linear forwards;
 }
 
 @keyframes shrink
@@ -115,6 +115,6 @@ transform-origin: bottom center;
 
     }
     to{
-        transform: scale(1.2);
+        transform: scale(1);
     }
 }

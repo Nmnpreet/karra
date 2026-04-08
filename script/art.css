@@ -2,5 +2,18 @@
     box-sizing: border-box;
 }
 body{
-    background: 
+    background: #add8e6;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow: hidden;
+    display: felx;
+    margin: 0;
 }
+.triangle
+{
+background-color: red;
+width: 40vw;
+height: 20vh;
+bottom: 50;
+}
+

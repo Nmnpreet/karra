@@ -3,6 +3,7 @@ const text = document.getElementById('text')
 
 totaltime = 7500
 breatheTime = (totalTime / 5 )* 2
+HoldTime = totalTime / 5
 
 
 

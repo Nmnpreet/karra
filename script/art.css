@@ -81,7 +81,7 @@ body {
 
 .eye1 {
   width: 8px;
-  height: 6px;
+  height: 8px;
   background: black;
   position: fixed;
   bottom: 155px;
@@ -90,8 +90,8 @@ body {
 }
 
 .eye2 {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background: black;
   position: fixed;
   bottom: 155px;
@@ -104,6 +104,6 @@ body {
   height: 80px;
   background: darkblue;
   position: fixed;
-  bottom: 50px;  /* touching ground */
+  bottom: 50px;  
   left: 200px;
 }

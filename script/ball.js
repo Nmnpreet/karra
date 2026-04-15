@@ -103,3 +103,13 @@ document.addEventListener('keydown', (event) =>{
     }
 
 })
+document.addEventListener('keyup',(event) =>{
+    if (event.key == 'w')
+    {
+        wkey = false
+    }
+    if (event.key == 's'
+        skey = false
+    )
+
+})

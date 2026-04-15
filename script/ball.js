@@ -9,9 +9,6 @@ let LPadelSpeed = 5
 let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
 let LPadelXPosition = 70
 
-
-
-
 ballRadius = 30
 windowHeight = window.innerHeight
 windowWidth = window.innerWidth

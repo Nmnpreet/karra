@@ -113,3 +113,12 @@ document.addEventListener('keyup',(event) =>{
     )
 
 })
+
+function moveLPadel() {
+    if (wkey == true && LPadelYPosition > 0)
+    {
+        LPadelYPosition = LPadelYPosition - LPadelSpeed
+
+    }
+    if (skey == true && LPadelYPosition < windowHeight -)
+}

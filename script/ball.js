@@ -2,18 +2,19 @@ windowHeight = window.innerHeight
 windowWidth = window.innerWidth
 ball = document.createElement('div')
 document.body.appendChild(ball)
+ballRadius = 30
+
 let ballXPosition = windowWidth/2 - ballRadius
 let ballSpeed = 5
 let ballXDirection = 1
 let ballYDirection = 1
 let ballYPosition = windowHeight/2 - ballRadius
-ballRadius = 30
 
 
 LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
 let LPadelWidth = 10
-let LpadelHeight = 100
+let LPadelHeight = 100
 let LPadelSpeed = 5
 let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
 let LPadelXPosition = 70
@@ -76,7 +77,7 @@ if
 }
 
 createLPadel()
-function create LPadel()
+function createLPadel()
 {
 LPadel.style.height = `${LPadelHeight}px`
 LPadel.style.width = `${LPadelWidth}px`
@@ -110,10 +111,11 @@ document.addEventListener('keyup',(event) =>{
     {
         wkey = false
     }
-    if (event.key == 's'
+    if (event.key == 's')
+    {
         skey = false
-    )
 
+    }
 })
 
 function moveLPadel() {

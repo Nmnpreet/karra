@@ -39,13 +39,13 @@ function  createBall()
 function moveBall()
 {
     ball.style.left =`${ballXPosition}px`
-     ball.style.top=`${ballYPosition}px`
+    ball.style.top=`${ballYPosition}px`
 
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
+    ballYPosition = ballYPosition + ballSpeed * ballYDirection
 
-     ballYPosition = ballYPosition + ballSpeed * ballYDirection
-
-    if (ballXPosition < 0 || ballXPosition > windowWidth -2 * ballRadius){
+    if (ballXPosition < 0 || ballXPosition > windowHeight -2 * ballRadius)
+        {
         ballXDirection = ballXDirection * -1
    }
 

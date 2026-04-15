@@ -3,9 +3,11 @@ document.body.appendChild(ball)
 LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
 
-let LPadelWidth = 20
+let LPadelWidth = 10
 let LpadelHeight = 100
 let LPadelSpeed = 5
+let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
+let LPadelXPosition
 
 
 

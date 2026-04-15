@@ -73,7 +73,7 @@ if
 
 }
 
-create LPadel()
+createLPadel()
 function create LPadel()
 {
 LPadel.style.height = `${LPadelHeight}px`

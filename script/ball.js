@@ -80,17 +80,25 @@ LPadel.style.height = `${LPadelHeight}px`
 LPadel.style.width = `${LPadelWidth}px`
 LPadel.style.backgroundColor = 'blue'
 LPadel.style.position = 'absolute'
-LPadel.style.left = '50px'
-LPadel.style.top = `${windowHeight / 2 - LPadelHeight / 2}px`
+LPadel.style.left = `${LPadelXPosition}px`
+LPadel.style.top = `${LPadelYPosition}px`
 
 }
-document.addEventListener('keyup', (event) =>{
+
+wkey = false
+skey = false
+
+
+
+document.addEventListener('keydown', (event) =>{
     if (event.key == 'w')
     {
-        LPadelYPosition = LPadelYPsoition - LPadelSpeed
+        wkey = true
+        // LPadelYPosition = LPadelYPsoition - LPadelSpeed
         //move up
     }
     if (event.key == 's'){
+        skey = true
         //move down
     }
 

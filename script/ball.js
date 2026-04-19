@@ -145,7 +145,6 @@
 windowHeight = window.innerHeight
 windowWidth = window.innerWidth
 
-// --- BALL ---
 ball = document.createElement('div')
 document.body.appendChild(ball)
 
@@ -156,7 +155,6 @@ let ballSpeed = 5
 let ballXDirection = 1
 let ballYDirection = 1
 
-// --- LEFT PADDLE ---
 LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
 
@@ -166,7 +164,6 @@ let LPadelSpeed = 5
 let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
 let LPadelXPosition = 30
 
-// --- RIGHT PADDLE ---
 RPadel = document.createElement('div')
 document.body.appendChild(RPadel)
 
@@ -175,15 +172,13 @@ let RPadelHeight = 100
 let RPadelYPosition = windowHeight / 2 - RPadelHeight / 2
 let RPadelXPosition = windowWidth - 40
 
-// --- SCORE ---
 let leftScore = 0
 let rightScore = 0
 
-score = document.createElement('h1')
-document.body.appendChild(score)
-score.style.textAlign = "center"
+// score = document.createElement('h1')
+// document.body.appendChild(score)
+// score.style.textAlign = "center"
 
-// --- CREATE ELEMENTS ---
 createBall()
 createLPadel()
 createRPadel()
@@ -212,17 +207,14 @@ function createRPadel() {
     RPadel.style.left = `${RPadelXPosition}px`
 }
 
-// --- MOVE BALL ---
 function moveBall() {
     ballXPosition += ballSpeed * ballXDirection
     ballYPosition += ballSpeed * ballYDirection
 
-    // wall bounce (FIXED width/height)
     if (ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius) {
         ballYDirection *= -1
     }
 
-    // LEFT paddle collision
     if (
         ballXPosition <= LPadelXPosition + LPadelWidth &&
         ballYPosition + 2 * ballRadius >= LPadelYPosition &&
@@ -231,7 +223,6 @@ function moveBall() {
         ballXDirection = 1
     }
 
-    // RIGHT paddle collision
     if (
         ballXPosition + 2 * ballRadius >= RPadelXPosition &&
         ballYPosition + 2 * ballRadius >= RPadelYPosition &&
@@ -240,7 +231,6 @@ function moveBall() {
         ballXDirection = -1
     }
 
-    // SCORE
     if (ballXPosition < 0) {
         rightScore++
         resetBall()
@@ -255,14 +245,12 @@ function moveBall() {
     ball.style.top = `${ballYPosition}px`
 }
 
-// --- RESET BALL ---
 function resetBall() {
     ballXPosition = windowWidth / 2
     ballYPosition = windowHeight / 2
     ballXDirection *= -1
 }
 
-// --- CONTROLS ---
 wkey = false
 skey = false
 upkey = false
@@ -282,7 +270,6 @@ document.addEventListener('keyup', (event) => {
     if (event.key == 'ArrowDown') downkey = false
 })
 
-// --- MOVE PADDLES ---
 function moveLPadel() {
     if (wkey && LPadelYPosition > 0) {
         LPadelYPosition -= LPadelSpeed
@@ -303,13 +290,12 @@ function moveRPadel() {
     RPadel.style.top = `${RPadelYPosition}px`
 }
 
-// --- ANIMATION ---
 function animate() {
     moveBall()
     moveLPadel()
     moveRPadel()
 
-    score.innerText = leftScore + " : " + rightScore
+
 
     requestAnimationFrame(animate)
 }

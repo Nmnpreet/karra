@@ -69,7 +69,8 @@ if
     (ballLeft <= LPadelRight) &&
     (ballXDirection == -1)
 
-){
+)
+{
     ballXDirection = ballXdirection * -1
 }
 
